@@ -1,3 +1,74 @@
-body {
-  background: orange;
+h1{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.formClass{
+  text-align: center;
+  font-family: sans-serif;
+  width: 80%;
+  margin: 2% auto;
+  border: 3px solid red;
+  padding: 1%;
+  background-color: rgb(170, 195, 236);
+}
+
+.formClass .formField {
+  flex: 1 1 80%;
+  display: flex;
+  margin: 3% 1%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.formClass .formField input {
+  width: 65%;
+  padding: 10px 6px; 
+  margin: 0 5% 0 0;
+  border: 2px solid orange;
+  border-radius:5px;
+}
+
+.formClass .formField label {
+  font-weight: bold;
+  padding: 5px 6px; 
+}
+
+.formClass .formGender {
+  font-weight: bold; 
+  display: flex;
+  flex: 1 1 80%;
+  margin: 3% 1%;
+  flex-flow: row wrap;
+  justify-content: start; 
+}
+
+.formClass .formGender select {
+  width: 50%;
+  flex: 1;
+  padding: 10px 6px; 
+  margin: 0 5% 0 17.5%;
+  border: 2px solid orange;
+  border-radius:5px;
+}
+
+.formClass .butt1 {
+  font-family: Century gothic;
+  font-size: 20px;
+  margin: 1%;
+  padding: 10px;
+  border-radius:5px;
+  background-color: orange;
+  color: black;
+  border: 2px solid black;
+  transition-duration: 0.2s;
+   
+}
+
+.formClass .butt1:hover {
+  background-color: #1172c4;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
 }
