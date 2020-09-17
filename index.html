@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Casey Mensah">
+        <link rel="stylesheet" href="./style1.css">
+    </head>
+    <body>
+      <h1>Résumé Template Creator</h1>
+      <h3>Kindly fill all parts of the form below. On completion, click <code>Generate</code> to see your résumé.</h3>
+      <form id="formID" class="formClass" method="post">  
+        <div class="formField">
+          <label for = "first"> First: </label>
+          <input type="text" id="first" name="fname" placeholder="First Name" required>
+        </div>
+        
+        <div class="formField">
+          <label for="middle">Middle: </label>
+          <input type="text" id="middle" name="mname" placeholder="Middle Name">
+        </div>
+        
+        <div class="formField">
+          <label for="last">Last: </label>
+          <input type="text" id="last" name="lname" placeholder="Last Name" required>
+        </div>
+        
+        <div class="formField">
+          <label for "address">Postal:</label>
+          <input type="text" id="addy" name="address" placeholder="Postal Address" required>
+        </div>
+        
+        <div class="formField">
+          <label for "Phone">Cell #:</label>
+          <input type="tel" id="phone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                 placeholder="Use format: xxx-xxx-xxxx" required>
+        </div>
+        
+        <div class="formField">
+          <label for "email">Email: </label>
+          <input type="email" id="email" name="email"  placeholder="Email Address" required>
+        </div>
+        
+        <div class="formGender">
+            <label for "gender"> Select Gender: </label>
+		    <select name="Gender" id="gender">
+                <option value="" selected> -- Select Gender -- </option>
+                <option value="Male"> Male</option>
+                <option value="Female">Female</option>
+            </select>
+	    </div>
+        
+        <button class="butt1" type="submit" value="generate" onclick="onSubmit()">Generate Résumé</button>
+      </form> 
+
+    <script src="script.js"></script>
+    </body>
+</html>
