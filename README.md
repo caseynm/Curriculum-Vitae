@@ -1,3 +1,2 @@
-# web-platform-wread5
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-wread5)
+# CV Template
+Takes an input from the user and modifies an existing document based on their inputs.
