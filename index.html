@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -8,8 +8,10 @@
     </head>
     <body>
       <h1>Résumé Template Creator</h1>
-      <h3>Kindly fill all parts of the form below. On completion, click <code>Generate</code> to see your résumé.</h3>
-      <form id="formID" class="formClass" method="post">  
+      
+      <h3>Kindly fill all parts of the form below. On completion, click <code>Generate</code> to see your resume.</h3>
+
+      <form id="formID" class="formClass" method="post" action="./index1.html">  
         <div class="formField">
           <label for = "first"> First: </label>
           <input type="text" id="first" name="fname" placeholder="First Name" required>
@@ -50,9 +52,8 @@
             </select>
 	    </div>
         
-        <button class="butt1" type="submit" value="generate" onclick="onSubmit()">Generate Résumé</button>
+        <button class="butt1" type="submit" value="generate" onclick="create()" >Generate Résumé</button>
       </form> 
-
-    <script src="script.js"></script>
+      <script src="script.js"></script>
     </body>
 </html>

@@ -54,21 +54,25 @@ h3{
 }
 
 .formClass .butt1 {
-  font-family: Century gothic;
-  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 18px;
   margin: 1%;
-  padding: 10px;
-  border-radius:5px;
-  background-color: orange;
-  color: black;
-  border: 2px solid black;
-  transition-duration: 0.2s;
-   
+  padding: 5px;
+  border-radius:10px;
+  background-color: ash;
 }
 
 .formClass .butt1:hover {
   background-color: #1172c4;
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  
+}
+
+/*for index page */
+.div1{
+  background-color: white;
+  font-family: verdana;
+  font-size: 10pt;
+  width: 65%;
+  margin:2% auto;
+  padding:5% 10%;
 }
