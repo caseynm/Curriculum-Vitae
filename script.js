@@ -1,5 +1,6 @@
-function create() {
-//gettting the values
+window.onload = function(){
+  function create() {
+    //getting the values
     let first = document.getElementById("first").value;
     let middle= document.getElementById("middle").value; 
     let last= document.getElementById("last").value; 
@@ -7,18 +8,50 @@ function create() {
     let addy= document.getElementById("addy").value;
     let phone= document.getElementById("phone").value;
     let gender= document.getElementById("gender").value;
-    //saving the values in session storage
-    sessionStorage.setItem("Value", first);
-    sessionStorage.setItem("Value1", middle);
-    sessionStorage.setItem("Value2", last);
-    sessionStorage.setItem("Value3", addy);
-    sessionStorage.setItem("Value4", phone);
-    sessionStorage.setItem("Value5", email);
-    sessionStorage.setItem("Value6", gender);
+
+    //saving the values in local storage
+    localStorage.setItem("Value", first);
+    localStorage.setItem("Value1", middle);
+    localStorage.setItem("Value2", last);
+    localStorage.setItem("Value3", addy);
+    localStorage.setItem("Value4", phone);
+    localStorage.setItem("Value5", email);
+    localStorage.setItem("Value6", gender);
+    console.log(value);
+    }
+
+
+
+//form field validation
+function validate(){
+    //Using regex to validate form fields
+    var first = document.getElementById("first").value;
+    if (first == null || !(first.match(/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/))){
+        alert("\'First Name\' is Empty or invalid");
+        return false;
+    }
+        
+    var last = document.getElementById("last").value;
+    if (last == null || !(last.match(/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/))){
+        alert("\'Last Name\' is Empty or invalid");
+        return false;
+    }
+    var mail = document.getElementById("email").value;
+    if (mail == null || !(mail.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))){
+        alert("Enter an Email Address");
+        return false;
+    }
+    var cell = document.getElementById("phone").value;
+    if (cell == null || !(cell.match(/^[- +()]*[0-9][- +()0-9]*$/))){
+        alert("Enter a Valid Number");
+        return false;
+    }
+    var gend = document.getElementById("gender").value;
+    if (gend == ""){
+        alert("Select a gender");
+        return false;
+    }
+  }
 }
 
-document.getElementById("data").innerHTML=sessionStorage.getItem("Value");
-document.getElementById("data3").innerHTML=sessionStorage.getItem("Value3");
-document.getElementById("data4").innerHTML=sessionStorage.getItem("Value4");
-document.getElementById("data5").innerHTML=sessionStorage.getItem("Value5");
-document.getElementById("data6").innerHTML=sessionStorage.getItem("Value6");
+
