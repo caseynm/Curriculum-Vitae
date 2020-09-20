@@ -1,6 +1,6 @@
 
 function create() {
-    //getting the values
+    //Getting the values
     let first = document.getElementById("first").value;
     let middle = document.getElementById("middle").value;
     let last = document.getElementById("last").value;
@@ -9,7 +9,7 @@ function create() {
     let phone = document.getElementById("phone").value;
     let gender = document.getElementById("gender").value;
 
-    //saving the values in local storage
+    //Saving the values in local storage
     localStorage.setItem("Value", first);
     localStorage.setItem("Value1", middle);
     localStorage.setItem("Value2", last);
@@ -18,7 +18,7 @@ function create() {
     localStorage.setItem("Value5", email);
     localStorage.setItem("Value6", gender);
 
-    //nested function for form field validation
+    //Nested function for form field validation
     function validate() {
     //Using regex to validate form fields
     var first = document.getElementById("first").value;
