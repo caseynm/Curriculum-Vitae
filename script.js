@@ -23,28 +23,28 @@ function create() {
     var first = document.getElementById("first").value;
     if (
       first == null ||
-      !first.match(/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/)
+      !first.match(/^[A-Za-z ,.'-]+$/i)
     ) {
-      alert("'First Name' is Empty or invalid");
+      alert("'First Name' is Empty or Invalid");
       return false;
     }
 
     var last = document.getElementById("last").value;
     if (
       last == null ||
-      !last.match(/^[A-Za-z][A-Za-z\'\-]+([\ A-Za-z][A-Za-z\'\-]+)*/)
+      !last.match(/^[A-Za-z ,.'-]+$/i)
     ) {
-      alert("'Last Name' is Empty or invalid");
+      alert("'Last Name' is Empty or Invalid");
+      return false;
+    }
+    var cell = document.getElementById("phone").value;
+    if (cell == null || !cell.match(/^[- +()]*[0-9][- +()0-9]*$/)) {
+      alert("Enter a Valid Phone Number");
       return false;
     }
     var mail = document.getElementById("email").value;
     if (mail == null || !mail.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
       alert("Enter an Email Address");
-      return false;
-    }
-    var cell = document.getElementById("phone").value;
-    if (cell == null || !cell.match(/^[- +()]*[0-9][- +()0-9]*$/)) {
-      alert("Enter a Valid Number");
       return false;
     }
     var gend = document.getElementById("gender").value;
