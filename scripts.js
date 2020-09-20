@@ -1,4 +1,4 @@
-//retrieving values in local storage
+//Retrieving values in local storage
 var a = localStorage.getItem("Value");
 var b = localStorage.getItem("Value1");
 var c = localStorage.getItem("Value2");
@@ -14,6 +14,6 @@ document.getElementById("data3").innerText = d;
 document.getElementById("data4").innerText = e;
 document.getElementById("data5").innerText = f;
 document.getElementById("data6").innerText = g;
-;
+
 
 
