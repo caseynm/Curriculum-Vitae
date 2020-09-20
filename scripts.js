@@ -1,10 +1,19 @@
-
-
 //retrieving values in local storage
-    document.getElementById("data").innerHTML=localStorage.getItem("Value");
-    document.getElementById("data1").innerHTML=localStorage.getItem("Value1");
-    document.getElementById("data2").innerHTML=localStorage.getItem("Value2");
-    document.getElementById("data3").innerHTML=localStorage.getItem("Value3");
-    document.getElementById("data4").innerHTML=localStorage.getItem("Value4");
-    document.getElementById("data5").innerHTML=localStorage.getItem("Value5");
-    document.getElementById("data6").innerHTML=localStorage.getItem("Value6");
+var a = localStorage.getItem("Value");
+var b = localStorage.getItem("Value1");
+var c = localStorage.getItem("Value2");
+var d = localStorage.getItem("Value3");
+var e = localStorage.getItem("Value4");
+var f = localStorage.getItem("Value5");
+var g = localStorage.getItem("Value6");
+
+document.getElementById("data").innerText = a;
+document.getElementById("data1").innerText = b;
+document.getElementById("data2").innerText = c;
+document.getElementById("data3").innerText = d;
+document.getElementById("data4").innerText = e;
+document.getElementById("data5").innerText = f;
+document.getElementById("data6").innerText = g;
+;
+
+
