@@ -18,6 +18,7 @@ function create() {
     localStorage.setItem("Value5", email);
     localStorage.setItem("Value6", gender);
 
+    //nested function for form field validation
     function validate() {
     //Using regex to validate form fields
     var first = document.getElementById("first").value;
@@ -28,7 +29,6 @@ function create() {
       alert("'First Name' is Empty or Invalid");
       return false;
     }
-
     var last = document.getElementById("last").value;
     if (
       last == null ||
@@ -54,5 +54,4 @@ function create() {
     }
   }
   return validate()
-  
 }
