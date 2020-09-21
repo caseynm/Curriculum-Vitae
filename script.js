@@ -21,7 +21,7 @@ function create() {
     //Nested function for form field validation
     function validate() {
     //Using regex to validate form fields
-    var first = document.getElementById("first").value;
+    let first = document.getElementById("first").value;
     if (
       first == null ||
       !first.match(/^[A-Za-z ,.'-]+$/i)
@@ -29,7 +29,7 @@ function create() {
       alert("'First Name' is Empty or Invalid");
       return false;
     }
-    var last = document.getElementById("last").value;
+    let last = document.getElementById("last").value;
     if (
       last == null ||
       !last.match(/^[A-Za-z ,.'-]+$/i)
@@ -37,17 +37,17 @@ function create() {
       alert("'Last Name' is Empty or Invalid");
       return false;
     }
-    var cell = document.getElementById("phone").value;
+    let cell = document.getElementById("phone").value;
     if (cell == null || !cell.match(/^[- +()]*[0-9][- +()0-9]*$/)) {
       alert("Enter a Valid Phone Number");
       return false;
     }
-    var mail = document.getElementById("email").value;
+    let mail = document.getElementById("email").value;
     if (mail == null || !mail.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
       alert("Enter an Email Address");
       return false;
     }
-    var gend = document.getElementById("gender").value;
+    let gend = document.getElementById("gender").value;
     if (gend == "") {
       alert("Select a gender");
       return false;

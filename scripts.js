@@ -1,11 +1,11 @@
 //Retrieving values in local storage
-var a = localStorage.getItem("Value");
-var b = localStorage.getItem("Value1");
-var c = localStorage.getItem("Value2");
-var d = localStorage.getItem("Value3");
-var e = localStorage.getItem("Value4");
-var f = localStorage.getItem("Value5");
-var g = localStorage.getItem("Value6");
+let a = localStorage.getItem("Value");
+let b = localStorage.getItem("Value1");
+let c = localStorage.getItem("Value2");
+let d = localStorage.getItem("Value3");
+let e = localStorage.getItem("Value4");
+let f = localStorage.getItem("Value5");
+let g = localStorage.getItem("Value6");
 
 document.getElementById("data").innerText = a;
 document.getElementById("data1").innerText = b;
